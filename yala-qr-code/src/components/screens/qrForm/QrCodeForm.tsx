@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { ColorPicker } from "../../colorPicker/ColorPicker"
+import { ColorPicker } from "../../qrColorPicker/QrColorPicker"
 import { InputFeild } from "../../global/TextInput"
 import validator from 'validator'
 import { Title } from "../../global/Title"
