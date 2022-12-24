@@ -13,5 +13,5 @@
 - hooks : contain our custom hooks to fetch data.
 - appState: contain the redux logic and app store.
 
-- I did two solutions the first commit is with Redux toolkit, the Second commit with react-query as required, I prefer state managemat solution or mix with them
-- there would be some UI bugs and bad UI design (ex: history page) due to lack of time  
+- I did two solutions the first commit is with Redux toolkit, the Second commit with react-query as required, I prefer state managemat solution or mix both of them
+- there would be some UI bugs and bad UI/UX experience (ex: history page) due to lack of time  
