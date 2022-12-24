@@ -36,6 +36,7 @@ function App() {
             </Switch>
             </div>
             </Router> 
+            <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>
     </Provider>
   )

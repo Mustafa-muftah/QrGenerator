@@ -5,25 +5,23 @@ import { Button } from "./Button";
 interface inputFeildProps {
     value:string,
     onChange:Dispatch<SetStateAction<string>>,
-    onSubmit:() => void
+    label:string,
 }
 
-export const InputFeild: React.FC<inputFeildProps> = ({value , onChange , onSubmit}) => {
+export const InputFeild: React.FC<inputFeildProps> = ({value , onChange , label}) => {
 
     return (
     <>
-          <form onSubmit={(e) =>  e.preventDefault()} className="flex flex-col mt-5">
+          <div className="flex flex-col mt-5">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
-                <label htmlFor="url" className="sr-only">
-                  Enter Url
+                <label  className="sr-only">
+                  {label}
                 </label>
                 <input
-                  id="url"
                   value={value}
                   onChange={ e => onChange(e.target.value)}
-                  name="url"
                   type="text"
                   required
                   className="appearance-none rounded-none relative block
@@ -34,12 +32,8 @@ export const InputFeild: React.FC<inputFeildProps> = ({value , onChange , onSubm
                   placeholder="Enter Url"
                 />
               </div>
-   
             </div>
-            <Button type={buttonActions.submit} text={"Get Qr code"} onClick={() => onSubmit()
-            } />
-
-          </form>
+            </div>
     </>
   )
 }

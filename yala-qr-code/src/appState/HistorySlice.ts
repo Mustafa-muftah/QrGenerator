@@ -13,7 +13,7 @@ export const historySlice = createSlice({
   name: 'history',
   initialState,
   reducers: {
-    addTohistoryList: (state, action: PayloadAction<string>) => {
+    addQrTohistoryList: (state, action: PayloadAction<string>) => {
         console.log("action",action.payload);
         
       state.history.push(action.payload)
@@ -21,6 +21,6 @@ export const historySlice = createSlice({
   },
 })
 
-export const { addTohistoryList } = historySlice.actions
+export const { addQrTohistoryList } = historySlice.actions
 
 export default historySlice.reducer
