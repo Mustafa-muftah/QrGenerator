@@ -2,7 +2,6 @@ import React, {  Dispatch, useState } from "react"
 import { CirclePicker } from "react-color"
 import { buttonActions } from "../../types"
 import { Button } from "../global/Button"
-import "./ColorPicker.css"
 
 interface colorPickerProps{
     color:string
