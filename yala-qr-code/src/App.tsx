@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import './App.css'
 import "./index.css"
 import { QueryClientProvider, QueryClient } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
 import { QrCodeForm } from './components/screens/qrForm/QrCodeForm'
 import { History } from './components/screens/history/History'
 import { Provider } from 'react-redux'
@@ -36,7 +35,6 @@ function App() {
             </Switch>
             </div>
             </Router> 
-            <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>
     </Provider>
   )

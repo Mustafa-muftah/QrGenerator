@@ -1,5 +1,3 @@
-import { useSelector } from "react-redux";
-import { RootState } from "../../../appState/Store";
 import { Title } from "../../global/Title"
 import { useQuery, useQueryClient } from "react-query";
 
