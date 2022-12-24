@@ -15,7 +15,7 @@ export const QrCodeForm: React.FC = () => {
     const [inputValue, setInputValue] = useState<string>("")
     const [color, setColor] = useState<string>("")
     
-    const { mutate , isSuccess , data ,isLoading } = useGetQrCode()
+    const { mutate , isSuccess , data ,isLoading , isIdle } = useGetQrCode()
 
     console.log({data});
     
